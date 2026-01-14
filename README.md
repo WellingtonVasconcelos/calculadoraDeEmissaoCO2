@@ -21,7 +21,6 @@ A **Calculadora de Emissão de CO₂** é uma aplicação web moderna e interati
 ### ✨ Destaques
 
 - 🚗 **4 Modos de Transporte**: Bicicleta, Carro, Ônibus e Caminhão
-- 🗺️ **40+ Cidades Brasileiras**: Banco de dados com principais rotas
 - 📊 **Comparação Visual**: Gráficos interativos e progress bars
 - 💰 **Créditos de Carbono**: Cálculo automático com preços de mercado
 - 📱 **Design Responsivo**: Funciona perfeitamente em mobile e desktop
