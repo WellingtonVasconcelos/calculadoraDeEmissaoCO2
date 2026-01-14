@@ -9,11 +9,9 @@
 
 <div align="center">
   
-  ![Calculadora de CO₂ Preview](https://via.placeholder.com/800x400/00b894/ffffff?text=Calculadora+CO₂+Preview)
-  
   <h3>🌍 Conscientize-se. Calcule. Compense.</h3>
   
-  [✨ **Experimente Agora**](https://wellingtonvasconcelos.github.io/calculadoraDeEmissaoCO2/) | [🐛 **Reportar Bug**](https://github.com/WellingtonVasconcelos/calculadoraDeEmissaoCO2/issues) | [💡 **Sugerir Melhoria**](https://github.com/WellingtonVasconcelos/calculadoraDeEmissaoCO2/issues)
+  [🐛 **Reportar Bug**](https://github.com/WellingtonVasconcelos/calculadoraDeEmissaoCO2/issues) | [💡 **Sugerir Melhoria**](https://github.com/WellingtonVasconcelos/calculadoraDeEmissaoCO2/issues)
 </div>
 
 ## 🎯 Sobre o Projeto
