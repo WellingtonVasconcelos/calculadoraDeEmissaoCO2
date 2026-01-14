@@ -111,22 +111,14 @@ Créditos de carbono necessários
 
 Custo estimado para compensação
 
-Exemplos Práticos
+Exemplos Práticos:
+
 Rota	Distância	Melhor Opção	Economia de CO₂
 São Paulo → Rio	430 km	Ônibus	13.3 kg
 Brasília → Goiânia	209 km	Bicicleta	25.1 kg
 Porto Alegre → Florianópolis	476 km	Ônibus	14.8 kg
 🛠️ Tecnologias Utilizadas
-Frontend
-<table> <tr> <td align="center" width="96"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="48" height="48" alt="HTML5" /> <br><strong>HTML5</strong> </td> <td align="center" width="96"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="48" height="48" alt="CSS3" /> <br><strong>CSS3</strong> </td> <td align="center" width="96"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" /> <br><strong>JavaScript</strong> </td> <td align="center" width="96"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="48" height="48" alt="Git" /> <br><strong>Git</strong> </td> </tr> </table>
-Ferramentas de Desenvolvimento
-<table> <tr> <td align="center" width="96"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="48" height="48" alt="VSCode" /> <br><strong>VS Code</strong> </td> <td align="center" width="96"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="48" height="48" alt="GitHub" /> <br><strong>GitHub</strong> </td> <td align="center" width="96"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="48" height="48" alt="NPM" /> <br><strong>NPM</strong> </td> <td align="center" width="96"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="48" height="48" alt="Node.js" /> <br><strong>Node.js</strong> </td> </tr> </table>
-Dependências do Projeto
-json
-{
-  "live-server": "^1.2.2",    // Servidor com live reload
-  "serve": "^14.0.0"          // Servidor estático para produção
-}
+
 📁 Estrutura do Código
 text
 calculadoraDeEmissaoCO2/
@@ -145,76 +137,8 @@ calculadoraDeEmissaoCO2/
 │   └── workflows/
 │       └── deploy.yml           # Pipeline de deploy para GitHub Pages
 └── README.md                    # Esta documentação
-Módulos JavaScript
-Arquivo	Responsabilidade	Funções Principais
-app.js	Controlador principal	Inicialização, eventos, fluxo
-calculator.js	Lógica de negócio	Cálculos de emissão, créditos
-config.js	Configurações	Fatores de emissão, autocomplete
-ui.js	Apresentação	Renderização, formatação, animações
-routes-data.js	Dados	Rotas brasileiras, distâncias
-particles.js	Efeitos	Animação de fundo, partículas
-🎨 Sistema de Design
-Paleta de Cores Renováveis
-css
-:root {
-  --primary: #00b894;     /* Verde energético */
-  --secondary: #0984e3;   /* Azul solar */
-  --accent: #fd79a8;      /* Rosa eólico */
-  --accent2: #ffeaa7;     /* Amarelo solar */
-  --accent3: #a29bfe;     /* Roxo hidrelétrico */
-  --dark: #2d3436;        /* Texto principal */
-  --light: #f9f9f9;       /* Fundos claros */
-}
-Animações e Transições
-css
-@keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(5deg); }
-}
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-Layout Responsivo
-Breakpoint	Dispositivo	Características
-< 576px	Mobile pequeno	1 coluna, fontes ajustadas
-576px - 767px	Mobile grande	2 colunas no grid
-768px - 991px	Tablet	4 colunas, padding aumentado
-992px - 1199px	Desktop	Layout otimizado
-≥ 1200px	Desktop grande	Máxima largura 1200px
-🔧 Configuração e Personalização
-Adicionar Novas Cidades
-javascript
-// Em routes-data.js
-routes: [
-  // ... rotas existentes
-  { 
-    origin: "Sua Cidade, UF", 
-    destination: "Outra Cidade, UF", 
-    distanceKm: 150 
-  },
-]
-Modificar Fatores de Emissão
-javascript
-// Em config.js
-EMISSION_FACTORS: {
-  bicycle: 0,              // 0 g/km
-  car: 0.12,               // 120 g/km
-  bus: 0.089,              // 89 g/km
-  truck: 0.96,             // 960 g/km
-  electricCar: 0.03,       // 30 g/km (adicionar novo)
-  motorcycle: 0.08,        // 80 g/km (adicionar novo)
-}
-Alterar Preços de Créditos
-javascript
-// Em config.js
-CARBON_CREDIT: {
-  KG_PER_CREDIT: 1000,     // 1 crédito = 1000 kg CO₂
-  PRICE_MIN_BRL: 50,       // Preço mínimo por crédito
-  PRICE_MAX_BRL: 150,      // Preço máximo por crédito
-}
+
 🚀 Deployment
 GitHub Pages (Automático)
 O projeto está configurado para deploy automático no GitHub Pages:
@@ -324,30 +248,8 @@ Areas para Contribuição
 🐛 Corrigir bugs existentes
 
 📄 Licença
-Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para detalhes completos.
+Este projeto está licenciado sob a MIT License
 
-text
-MIT License
-
-Copyright (c) 2024 Wellington Vasconcelos
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 🙏 Agradecimentos
 DIO (Digital Innovation One) pela iniciativa educacional
 
@@ -387,17 +289,6 @@ Issues: GitHub Issues
 
 Email: wltvasc@hotmail.com
 
-Perguntas Frequentes
-
-Q: Posso usar em meu site/organização?
-A: Sim! MIT License permite uso comercial e modificações.
-
-Q: Como adiciono minha cidade?
-A: Veja a seção "Adicionar Novas Cidades" acima ou abra uma issue.
-
-Q: O projeto aceita doações?
-A: Não aceitamos doações monetárias, mas aceitamos contribuições de código!
-
 🔮 Roadmap e Futuro
 Próximas Features Planejadas
 Adicionar mais modos de transporte (trem, avião)
@@ -415,23 +306,3 @@ App mobile nativo
 Dashboard de estatísticas
 
 Sistema de salvamento de cálculos
-
-Versões Futuras
-v1.1.0: Mais cidades e transporte ferroviário
-
-v1.2.0: Exportação de relatórios em PDF
-
-v2.0.0: Backend com banco de dados e usuários
-
-<div align="center">
-🌟 Se este projeto ajudou você, considere dar uma estrela no GitHub!
-
-https://img.shields.io/github/stars/WellingtonVasconcelos/calculadoraDeEmissaoCO2?style=social
-https://img.shields.io/github/forks/WellingtonVasconcelos/calculadoraDeEmissaoCO2?style=social
-https://img.shields.io/github/issues/WellingtonVasconcelos/calculadoraDeEmissaoCO2?style=social
-
-<sub>Feito com ❤️ e JavaScript para um planeta mais sustentável</sub>
-
-<sub>Última atualização: Janeiro 2026 </sub>
-
-</div> ```
