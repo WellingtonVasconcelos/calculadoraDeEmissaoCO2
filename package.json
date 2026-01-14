@@ -1,0 +1,26 @@
+{
+  "name": "calculadoraDeEmissaoCO2",
+  "version": "1.0.0",
+  "description": "Calculadora de Emissão de CO₂",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WellingtonVasconcelos/calculadoraDeEmissaoCO2.git"
+  },
+  "keywords": ["co2", "calculadora", "sustentabilidade"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WellingtonVasconcelos/calculadoraDeEmissaoCO2.git/issues"
+  },
+  "homepage": "https://github.com/WellingtonVasconcelos/calculadoraDeEmissaoCO2#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.0.0"
+  }
+}
